@@ -1,0 +1,75 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+#datesent{
+    text-align: right;
+}
+
+
+
+  #container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.3fr 0.7fr; 
+    grid-template-rows: 0.8fr 0.9fr 1.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Messages Status"
+      "Messages Publish"
+      "Messages Friends"; 
+  }
+  #Messages { grid-area: Messages; }
+  #Status { grid-area: Status; }
+  #Publish { grid-area: Publish; }
+  #Friends { grid-area: Friends; }
+  
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.list {
+    text-align: left;
+    max-width: 750px;
+    margin: auto;
+}
+.submit-form {
+    max-width: 300px;
+    margin: auto;
+}
+.edit-form {
+    max-width: 300px;
+    margin: auto;
+}
